@@ -12,14 +12,14 @@ int main()
   while (n1 >= 0)
   {
     n2 = (total - (n1 * 5)) / 3;
-    if (n2 = (total - (n1 * 5)) % 3 == 0)
+    if ((total - (n1 * 5)) % 3 == 0)
       {
         n2 = (total - (n1 * 5)) / 3;
         break;
       }
     n1--;
   }
-  if (n1 == 0 && total % 3 != 0)
+  if (n1 < 0 && total % 3 != 0)
   {
     printf("-1");
     return (0);
